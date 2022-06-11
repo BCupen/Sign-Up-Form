@@ -35,6 +35,7 @@ body, html{
 }
 
 .right{
+    height: 100vh;
     width: 60vw;
     display: flex;
     flex-direction: column;
@@ -45,18 +46,19 @@ body, html{
 .info{
     margin: 0;
     background-color: #f9fafb;
-    padding: 10vh 5vh 5vh 5vh;
+    padding: 7vh 5vh 5vh 5vh;
     font-family: Arial, serif;
     font-size: 1.25rem;
     font-weight: 700;
 }
 
 .input{
+    margin-bottom: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem 3rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     box-shadow: 0 10px 20px -2px #8888;
 }
 
@@ -67,5 +69,28 @@ body, html{
 
 .section{
     display: flex;
-    gap: 4.5rem;
+    gap: 5vw;
+}
+
+input{
+    border: 3px solid #E5E7EB;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #1e6cb9;
+    box-shadow: 3px 3px #8888;
+}
+
+.submit-button{
+    padding: 0 3rem;
+}
+
+#create-account{
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    background-color: #596D48;
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
 }
