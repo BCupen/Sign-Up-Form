@@ -9,16 +9,15 @@ body, html{
     display: flex;
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    padding: 0;
-    gap: 0;
 }
 
 .left{
     background-image: url("beach_bg.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    width: 40rem;
+    width: 40vw;
+    min-height: 100%;
 }
 
 .logo{
@@ -35,25 +34,25 @@ body, html{
 }
 
 .right{
-    height: 100vh;
     width: 60vw;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    max-height: 100vh;
 }
 
 .info{
     margin: 0;
     background-color: #f9fafb;
-    padding: 7vh 5vh 5vh 5vh;
+    padding: 2vh 5vh 5vh;
     font-family: Arial, serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 .input{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem 3rem;
     display: flex;
@@ -72,6 +71,33 @@ body, html{
     gap: 5vw;
 }
 
+.section.password{
+    flex-wrap: wrap;
+}
+
+.section div{
+    flex-grow: 1;
+}
+
+.error-message{
+    margin: 0;;
+    flex-basis: 100%;
+}
+
+.log-in{
+    display: inline;
+    margin: 0;
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.log-in a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 600;
+}
+
 input{
     border: 3px solid #E5E7EB;
 }
@@ -79,6 +105,12 @@ input{
 input:focus{
     outline: none;
     border: 2px solid #1e6cb9;
+    box-shadow: 3px 3px #8888;
+}
+
+input.error{
+    outline: none;
+    border: 2px solid red;
     box-shadow: 3px 3px #8888;
 }
 

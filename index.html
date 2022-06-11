@@ -50,20 +50,28 @@
                     <div class="section password">
                         <div class="intial">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" onkeyup="checkPass()">
                         </div>
                         <div class="confirm">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirm-password">
+                            <input type="password" id="confirm-password" name="confirm-password" onkeyup="checkPass()">
                         </div>
+                        <p class="error-message"></p>
                     </div>                    
                 </div>
                 <div class="submit-button">
                     <button type="submit" id="create-account">CREATE ACCOUNT</button>
                 </div>    
             </form>
+            <div class="log-in">
+               <p class="log-in">Already have an account?</p>
+               <a href="#">Log in.</a> 
+            </div>
+            
+
         </div>
     </div>
     
+    <script src="main.js"></script>
 </body>
 </html>
