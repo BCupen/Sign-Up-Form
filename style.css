@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left{
+    background-image: url("beach_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40rem;
+}
+
+.logo{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo p{
+    font-family: 'Amatic SC';
+    font-size: 4rem;
+}
+
+.right{
+}
+
