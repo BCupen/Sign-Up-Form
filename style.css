@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
-body{
+body, html{
     padding: 0;
     margin: 0;
 }
@@ -9,6 +9,9 @@ body{
     display: flex;
     width: 100vw;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+    gap: 0;
 }
 
 .left{
@@ -32,5 +35,37 @@ body{
 }
 
 .right{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
+.info{
+    margin: 0;
+    background-color: #f9fafb;
+    padding: 10vh 5vh 5vh 5vh;
+    font-family: Arial, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.input{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0 10px 20px -2px #8888;
+}
+
+.section div{
+    display: flex;
+    flex-direction: column;
+}
+
+.section{
+    display: flex;
+    gap: 4.5rem;
+}
